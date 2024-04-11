@@ -13,6 +13,11 @@
 		967F69F12A7D2BCA00EA1B0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967F69EF2A7D2BCA00EA1B0B /* Main.storyboard */; };
 		967F69F32A7D2BCB00EA1B0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967F69F22A7D2BCB00EA1B0B /* Assets.xcassets */; };
 		967F69F62A7D2BCB00EA1B0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967F69F42A7D2BCB00EA1B0B /* LaunchScreen.storyboard */; };
+		967F6A002A7D3E1400EA1B0B /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F69FF2A7D3E1400EA1B0B /* FoodCell.swift */; };
+		96ACF8C52A98D549002C3DA6 /* Basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACF8C42A98D549002C3DA6 /* Basket.swift */; };
+		96F0B2C02A82A3EB005EB540 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 96F0B2BF2A82A3EB005EB540 /* Alamofire */; };
+		96F0B2C32A82A532005EB540 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F0B2C22A82A532005EB540 /* FoodModel.swift */; };
+		96F0B2C62A82B213005EB540 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 96F0B2C52A82B213005EB540 /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,9 @@
 		967F69F22A7D2BCB00EA1B0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		967F69F52A7D2BCB00EA1B0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		967F69F72A7D2BCB00EA1B0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		967F69FF2A7D3E1400EA1B0B /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
+		96ACF8C42A98D549002C3DA6 /* Basket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basket.swift; sourceTree = "<group>"; };
+		96F0B2C22A82A532005EB540 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96F0B2C62A82B213005EB540 /* SDWebImage in Frameworks */,
+				96F0B2C02A82A3EB005EB540 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +66,42 @@
 		967F69E82A7D2BCA00EA1B0B /* gambit */ = {
 			isa = PBXGroup;
 			children = (
+				967F69FD2A7D3D5900EA1B0B /* MainScreen */,
 				967F69E92A7D2BCA00EA1B0B /* AppDelegate.swift */,
 				967F69EB2A7D2BCA00EA1B0B /* SceneDelegate.swift */,
-				967F69ED2A7D2BCA00EA1B0B /* ViewController.swift */,
-				967F69EF2A7D2BCA00EA1B0B /* Main.storyboard */,
 				967F69F22A7D2BCB00EA1B0B /* Assets.xcassets */,
 				967F69F42A7D2BCB00EA1B0B /* LaunchScreen.storyboard */,
 				967F69F72A7D2BCB00EA1B0B /* Info.plist */,
 			);
 			path = gambit;
+			sourceTree = "<group>";
+		};
+		967F69FD2A7D3D5900EA1B0B /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				96F0B2C12A82A4EE005EB540 /* Model */,
+				967F69FE2A7D3DB800EA1B0B /* Cells */,
+				967F69ED2A7D2BCA00EA1B0B /* ViewController.swift */,
+				967F69EF2A7D2BCA00EA1B0B /* Main.storyboard */,
+				96ACF8C42A98D549002C3DA6 /* Basket.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		967F69FE2A7D3DB800EA1B0B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				967F69FF2A7D3E1400EA1B0B /* FoodCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		96F0B2C12A82A4EE005EB540 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96F0B2C22A82A532005EB540 /* FoodModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +120,10 @@
 			dependencies = (
 			);
 			name = gambit;
+			packageProductDependencies = (
+				96F0B2BF2A82A3EB005EB540 /* Alamofire */,
+				96F0B2C52A82B213005EB540 /* SDWebImage */,
+			);
 			productName = gambit;
 			productReference = 967F69E62A7D2BCA00EA1B0B /* gambit.app */;
 			productType = "com.apple.product-type.application";
@@ -102,7 +143,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 967F69E12A7D2BCA00EA1B0B /* Build configuration list for PBXProject "gambit" */;
+			buildConfigurationList = 967F69E12A7D2BCA00EA1B0B /* Build configuration list for PBXProject "peretz" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,6 +152,10 @@
 				Base,
 			);
 			mainGroup = 967F69DD2A7D2BCA00EA1B0B;
+			packageReferences = (
+				96F0B2BE2A82A3EB005EB540 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				96F0B2C42A82B213005EB540 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 967F69E72A7D2BCA00EA1B0B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96F0B2C32A82A532005EB540 /* FoodModel.swift in Sources */,
 				967F69EE2A7D2BCA00EA1B0B /* ViewController.swift in Sources */,
+				967F6A002A7D3E1400EA1B0B /* FoodCell.swift in Sources */,
+				96ACF8C52A98D549002C3DA6 /* Basket.swift in Sources */,
 				967F69EA2A7D2BCA00EA1B0B /* AppDelegate.swift in Sources */,
 				967F69EC2A7D2BCA00EA1B0B /* SceneDelegate.swift in Sources */,
 			);
@@ -295,6 +343,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +372,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,7 +389,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		967F69E12A7D2BCA00EA1B0B /* Build configuration list for PBXProject "gambit" */ = {
+		967F69E12A7D2BCA00EA1B0B /* Build configuration list for PBXProject "peretz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				967F69F82A7D2BCB00EA1B0B /* Debug */,
@@ -358,6 +408,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96F0B2BE2A82A3EB005EB540 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		96F0B2C42A82B213005EB540 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96F0B2BF2A82A3EB005EB540 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96F0B2BE2A82A3EB005EB540 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		96F0B2C52A82B213005EB540 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96F0B2C42A82B213005EB540 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 967F69DE2A7D2BCA00EA1B0B /* Project object */;
 }
