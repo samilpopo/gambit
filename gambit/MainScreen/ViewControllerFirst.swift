@@ -11,13 +11,12 @@ class ViewControllerFirst: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+      
+        let appearance = UINavigationBarAppearance()
+       appearance.configureWithOpaqueBackground()
+       appearance.backgroundColor = UIColor(displayP3Red: 21/255, green: 21/155, blue: 21/255, alpha: 1)
+       
+        
     }
 
 }

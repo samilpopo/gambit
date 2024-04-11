@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		965A915C2AB847530058B81D /* FirtsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A915B2AB847530058B81D /* FirtsPage.swift */; };
 		967F69EA2A7D2BCA00EA1B0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F69E92A7D2BCA00EA1B0B /* AppDelegate.swift */; };
 		967F69EC2A7D2BCA00EA1B0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F69EB2A7D2BCA00EA1B0B /* SceneDelegate.swift */; };
 		967F69EE2A7D2BCA00EA1B0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F69ED2A7D2BCA00EA1B0B /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		965A915B2AB847530058B81D /* FirtsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirtsPage.swift; sourceTree = "<group>"; };
 		967F69E62A7D2BCA00EA1B0B /* gambit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gambit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967F69E92A7D2BCA00EA1B0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		967F69EB2A7D2BCA00EA1B0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				96F0B2C12A82A4EE005EB540 /* Model */,
 				967F69FE2A7D3DB800EA1B0B /* Cells */,
 				967F69ED2A7D2BCA00EA1B0B /* ViewController.swift */,
+				965A915B2AB847530058B81D /* FirtsPage.swift */,
 				967F69EF2A7D2BCA00EA1B0B /* Main.storyboard */,
 				96ACF8C42A98D549002C3DA6 /* Basket.swift */,
 			);
@@ -143,7 +146,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 967F69E12A7D2BCA00EA1B0B /* Build configuration list for PBXProject "peretz" */;
+			buildConfigurationList = 967F69E12A7D2BCA00EA1B0B /* Build configuration list for PBXProject "gambit" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -188,6 +191,7 @@
 				967F6A002A7D3E1400EA1B0B /* FoodCell.swift in Sources */,
 				96ACF8C52A98D549002C3DA6 /* Basket.swift in Sources */,
 				967F69EA2A7D2BCA00EA1B0B /* AppDelegate.swift in Sources */,
+				965A915C2AB847530058B81D /* FirtsPage.swift in Sources */,
 				967F69EC2A7D2BCA00EA1B0B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,7 +393,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		967F69E12A7D2BCA00EA1B0B /* Build configuration list for PBXProject "peretz" */ = {
+		967F69E12A7D2BCA00EA1B0B /* Build configuration list for PBXProject "gambit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				967F69F82A7D2BCB00EA1B0B /* Debug */,

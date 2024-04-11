@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  gambit
 //
-//  Created by samil on 04.08.2023.
+//  Created by samil on 04.12.2023.
 //
 
 import UIKit
